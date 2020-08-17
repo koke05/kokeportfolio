@@ -1,0 +1,130 @@
+.top_header{
+    height: 100vh;
+    margin-bottom: 150px;
+    .sp_global-nav{
+            .sp_navshowBt{
+                padding: 10px 0px;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                span{
+                    width: 30px;
+                    height: 4px;
+                    display: block;
+                    background-color: #fff;
+                }
+                span:not(:last-child){
+                    margin-bottom: 7px;
+                }
+            }
+            .sp_nav_item{
+                position: fixed;
+                top: 0;
+                left: 100%;
+                width: 100%;
+                height: 100%;
+                background-color: #333;
+                transition: all 400ms;
+                li{
+                    padding-top: 55px;
+                    text-align: center;
+                    font-size: 5.4rem;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+            }
+            .navhideBt{
+                margin-top: 45px;
+                span{
+                    display: block;
+                    margin: 0 auto;
+                    width: 4px;
+                    height: 40px;
+                    background: #fff;
+                    transform: rotate(45deg);
+                }
+                span:before{
+                    content: "";
+                    display: block;
+                    margin: 0 auto;
+                    width: 4px;
+                    height: 40px;
+                    background: #fff;
+                    transform: rotate(90deg);
+                }
+            }
+            .navshow{
+                left: 0;
+            }
+
+    }
+    .mainvisual{
+        .main_title{
+            h1{
+                font-size: 4.2rem;
+                line-height: 1.041;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin: 44vh auto 50vh;
+            }
+        }
+        .pc_global-nav{
+            display: none;
+            .pc_nav-item{
+                li{
+                    margin-bottom: 60px;
+                    font-size: 6rem;
+                    font-weight: 400;
+                    letter-spacing: 0.03em;
+                }
+            }
+        }
+    }
+}
+// iPad
+@media screen and(min-width:376px){
+    .top_header{
+        .sp_global-nav{
+            .sp_navshowBt{
+                padding: 10px 0px;
+                top: 30px;
+                right: 30px;
+                span{
+                    width: 50px;
+                    height: 7px;
+                    display: block;
+                    background-color: #fff;
+                }
+                span:not(:last-child){
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .mainvisual{
+            .main_title{
+                h1{
+                    font-size: 7.5rem;
+                }
+            }
+        }
+    }
+}
+// iPadPro
+@media screen and(min-width:769px){
+    .top_header{
+        .sp_global-nav{
+            display: none;
+        }
+        .mainvisual{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .pc_global-nav{
+                display: block;
+                .pc_nav{
+                    display: flex;
+                }
+            }
+        }
+    }
+}

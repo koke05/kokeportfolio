@@ -24,7 +24,7 @@
     
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    
+    <link rel="stylesheet" href="https://use.typekit.net/faw7tro.css">
     <link rel="stylesheet" href="reset/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
     
@@ -32,9 +32,146 @@
 </head>
 
     <body>
+        <div class="cursor" id="js_cursor"></div>
+        <div class="stalker" id="js_stalker"></div>
         <header>
-            
+            <div class="top_header">
+                <div class="sp_global-nav">
+                    <div class="sp_navshowBt" id="js_navshow">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="sp-nav">
+                        <ul class="sp_nav_item">
+                            <li id="js_sp_work_scroll"><a>work</a></li>
+                            <li id="js_sp_profile_scroll"><a>profile</a></li>
+                            <li><a href="https://koke05.com/blog">blog</a></li>
+                            <div class="navhideBt" id="js_navhide">
+                                <span></span>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mainvisual l_inner">
+                    <div class="main_title">
+                        <h1>koke<br>portfolio</h1>
+                    </div>
+                    <div class="pc_global-nav">
+                        <nav class="pc_nav">
+                            <ul class="pc_nav-item">
+                                <li id="js_pc_work-scroll"><a>work</a></li>
+                                <li id="js_pc_profile-scroll"><a>profile</a></li>
+                                <li><a href="https://koke05.com/blog">blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </header>
+        <main>
+            <section class="main_work l_inner">
+                <h2 class="top_heading_title">work</h2>
+                <article class="main_work_contents">
+                    <div class="main_work_contents__image">
+                        <picture>
+                            <source media="(min-width:376px)" srcset="image/tridencafe_top_tb.png">
+                            <source media="(min-width:769px)" srcset="image/tridencafe_top_tbpro.png">
+                            <source media="(min-width:1025px)" srcset="image/tridencafe_top_pc.png">
+                            <img src="image/tridencafe_top_sp.png" loading="lazy" width:330px; height:230px; alt="古民家カフェ虎威殿のトップページデザインの画像です。">
+                        </picture>
+                    </div>
+                    <div class="main_work_contents_text">
+                        <h3>Triden&nbsp;Cafe</h3>
+                        <p>古民家カフェ虎威殿のトップページデザインです。ロゴなどは用意されており、全体のレイアウトのデザインをしました。</p>
+                        <a href="work_01.html"><button class="link_Bt">show&nbsp;more</button></a>
+                        
+                    </div>
+                </article>
+                <article class="main_work_contents">
+                    <div class="main_work_contents__image">
+                        <picture>
+                            <source media="(min-width:376px)" srcset="image/kokeblog_top_tb.png">
+                            <source media="(min-width:769px)" srcset="image/kokeblog_top_tbpro.png">
+                            <source media="(min-width:1025px)" srcset="image/kokeblog_top_pc.png">
+                            <img src="image/kokeblog_top_sp.png" loading="lazy" width:330px; height:230px; alt="kokeblogの画像です。">
+                        </picture>
+                    </div>
+                    <div class="main_work_contents_text">
+                        <h3>kokeblog</h3>
+                        <p>日々の学びや制作物についてまとめているブログです。デザイン、コーディング、WordPressの導入まで行いました。</p>
+                        <a href="work_02.html"><button class="link_Bt">show&nbsp;more</button></a>
+                    </div>
+                </article>
+                <article class="main_work_contents">
+                    <div class="main_work_contents__image">
+                        <picture>
+                            <source media="(min-width:376px)" srcset="image/kokewebclip_top_tb.png">
+                            <source media="(min-width:769px)" srcset="image/kokewebclip_top_tbpro.png">
+                            <source media="(min-width:1025px)" srcset="image/kokewebclip_top_pc.png">
+                            <img src="image/kokewebclip_top_sp.png" loading="lazy" width:330px; height:230px; alt="kokewebclipの画像です。">
+                        </picture>
+                    </div>
+                    <div class="main_work_contents_text">
+                        <h3>koke&nbsp;WebClip</h3>
+                        <p>アニメやゲームなどのサブカルチャー系のWebサイトをクリッピングするサイトです。現在、100サイトほど掲載しています。</p>
+                        <a href="work_03.html"><button class="link_Bt">show&nbsp;more</button></a>
+                    </div>
+                </article>
+                <article class="main_work_contents">
+                    <div class="main_work_contents__image">
+                        <picture>
+                            <source media="(min-width:376px)" srcset="image/kokeportfolio_top_tb.png">
+                            <source media="(min-width:769px)" srcset="image/kokeportfolio_top_tbpro.png">
+                            <source media="(min-width:1025px)" srcset="image/kokeportfolio_top_pc.png">
+                            <img src="image/kokeportfolio_top_sp.png" loading="lazy" width:330px; height:230px; alt="kokeportfolioの画像です。">
+                        </picture>
+                    </div>
+                    <div class="main_work_contents_text">
+                        <h3>koke&nbsp;portfolio</h3>
+                        <p>今まで制作してきた作品や私自身について、詳しくまとめてあるポートフォリオサイトです。gulpとEJSを使って制作しました。</p>
+                        <a href="work_04.html"><button class="link_Bt">show&nbsp;more</button></a>
+                    </div>
+                </article>
+            </section>
+            <section class="main_profile l_inner">
+                <h2 class="top_heading_title">profile</h2>
+                <div class="main_profile_contents">
+                    <div class="main_profile_contents__image">
+                        
+                    </div>
+                    <div class="main_profile_contents__text">
+                        <h3>kobayashi&nbsp;kent</h3>
+                        <p>トライデントコンピューター専門学校Webデザイン学科2年生<br>アニメ・ゲーム・バスケットボールが好きです。</p>
+                        <h4>skill</h4>
+                        <dl>
+                            <div class="skill_contents_program">
+                                <dt>program</dt>
+                                <div class="skill_contents_program__text">
+                                    <dd>HTML</dd>
+                                    <dd>CSS</dd>
+                                    <dd>JavaScripy</dd>
+                                    <dd>jQuery</dd>
+                                    <dd>Sass</dd>
+                                    <dd>WordPress</dd>
+                                </div>
+                            </div>
+                            <div class="skill_contents_design">
+                                <dt>design</dt>
+                                <div class="skill_contents_design__text">
+                                    <dd>Illustrator</dd>
+                                    <dd>Photoshop</dd>
+                                    <dd>XD</dd>
+                                </div>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <small>&copy;&nbsp;2020&nbsp;kokeportfolio</small>
+        </footer>
     </body>
 
 <script src="js/jquery.min.js"></script>

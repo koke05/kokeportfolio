@@ -18,16 +18,8 @@
   },
   "homepage": "https://github.com/koke05/gulp#readme",
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "browserslist": [
-      "last 2 versions",
-      "Explorer 11",
-      "iOS 9.0",
-      "Android 4.1"
-    ],
     "gulp": "^4.0.2",
     "gulp-ejs": "^5.1.0",
-    "gulp-postcss": "^8.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",

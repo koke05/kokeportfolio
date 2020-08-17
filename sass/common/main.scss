@@ -1,0 +1,258 @@
+// トップページ
+// 共通のCSS
+.top_heading_title{
+    font-size: 4.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+.work_contents_head_title{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.link_Bt{
+    font-weight: 200;
+    padding: 10px 20px;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    box-shadow:  3px 3px 4px #0d0d0d, 
+    -3px -3px 4px #303030;
+    -webkit-box-shadow:  3px 3px 4px #0d0d0d, 
+    -3px -3px 4px #303030;
+}
+.link_Bt:hover{
+    box-shadow:  -3px -3px 4px #0d0d0d, 
+    3px 3px 4px #303030;
+    -webkit-box-shadowbox-shadow: -3px -3px 4px #0d0d0d, 
+                                3px 3px 3px #303033;
+}
+// work
+.main_work{
+    margin-bottom: 150px;
+    .main_work_contents{
+            margin-bottom: 100px;
+        .main_work_contents_text{
+            margin-top: 15px;
+            h3{
+                font-size: 3.6rem;
+                font-weight: 200;
+            }
+            p{
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+            button{
+                font-size: 1.8rem;
+            }
+        }
+    .main_work_contents__image{
+        img{
+            box-shadow: 0px 0px 5px #161616;
+            -webkit-box-shadow: 0px 0px 5px #161616;
+        }
+    }
+    }
+    .main_work_contents:last-of-type{
+        margin-bottom: 0;
+    }
+}
+// iPad
+@media screen and(min-width:376px){
+    .top_heading_title{
+        font-size: 8rem;
+        margin-bottom: 90px;
+    }
+    .main_work_contents{
+        display: flex;
+        align-items: center;
+    }
+    .main_work_contents:nth-child(odd){
+        flex-flow: row-reverse;
+        .main_work_contents_text{
+            margin-right: 60px;
+            margin-left: 0;
+        }
+    }
+    .main_work_contents:nth-child(even){
+        .main_work_contents_text{
+            margin-left: 60px;
+        }
+    }
+}
+
+// profile
+.main_profile{
+    .main_profile_contents__text{
+        h3{
+            font-size: 4rem;
+            font-weight: 200;
+            margin-bottom: 25px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        h4{
+            font-size: 3.2rem;
+            font-weight: 200;
+            margin-bottom: 5px;
+        }
+        .skill_contents_program{
+            margin-bottom: 15px;
+        }
+        .skill_contents_program__text{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill_contents_design__text{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        dt{
+            font-size: 2.4rem;
+            font-weight: 200;
+            margin-bottom: 5px;
+        }
+        dd{
+            font-size: 1.8rem;
+            font-weight: 200;
+            margin-right: 15px;
+        }
+
+    }
+}
+
+// 作品ページ
+
+// header
+.work_head{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+    a{
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+}
+// main
+.work{
+    .work_overview{
+        margin-top: 80px;
+        margin-bottom: 70px;
+        h2{
+            font-size: 3.8rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .work_overview_main{
+            .work_overview_list{
+                margin-top: 40px;
+                margin-bottom: 40px;
+                .work_overview_list_item{
+                    display: flex;
+                    margin-bottom: 15px;
+                    dt{
+                        font-size: 1.6rem;
+                        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+                    }
+                    dd{
+                        margin-left: 60px;
+                        font-size: 1.6rem;
+                        font-weight: 200;
+                        font-family: futura-pt,"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+                    }
+                }
+                .work_overview_list_item:nth-of-type(3){
+                    dd{
+                        margin-left: 44px;
+                    }
+                }
+            }
+            button{
+                font-size: 1.6rem;
+                font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+            }
+        }
+    }
+    .work_contents{
+        h3{
+            font-size: 3.2rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+        }
+        .work_contents_outline{
+            margin-bottom: 40px;
+        }
+        .work_contents_flow{
+            p{
+                margin-bottom: 20px;
+            }
+            img{
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+// iPad
+@media screen and(min-width:376px){
+    .work{
+        .work_overview{
+            h2{
+                font-size: 5rem;
+                text-align: left;
+            }
+        }
+        .work_overview_main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            picture{
+                width: 55%;
+            }
+        }
+        .work_contents{
+            h3{
+                font-size: 4.2rem;
+            }
+            .work_contents_head_title{
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+
+// iPadPro
+@media screen and(min-width:769px){
+    .work{
+        .work_overview_main{
+            picture{
+                width: 57%;
+            }
+        }
+    }
+}
+
+// PC
+@media screen and(min-width:1025px){
+    .work{
+        .work_overview{
+            .work_overview_main{
+                picture{
+                    width: 62%;
+                }
+                button{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

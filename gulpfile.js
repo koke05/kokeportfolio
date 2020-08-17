@@ -1,8 +1,6 @@
 const gulp = require("gulp");
-const postcss = require("gulp-postcss");
 const sass = require("gulp-sass");
-const plumber = require("gulp-plumber");
-const autoprefixer = require("autoprefixer");
+const plumber = require('gulp-plumber');
 const sassGlob = require("gulp-sass-glob");
 const rename = require("gulp-rename");
 const ejs = require("gulp-ejs");
@@ -13,9 +11,6 @@ gulp.task("sass", function() {
 return (
     gulp
     .src("sass/**/*scss")
-    .pipe(postcss([
-        autoprefixer()
-    ]))
     .pipe(sassGlob())
     .pipe(plumber())
     .pipe(sass())

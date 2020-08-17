@@ -1,7 +1,91 @@
-$themaColor: #fafafa;
+// 変数
+$themeColor: #202428;
+$fontColor:#fcfcfc;
+// css
 html{
-    font-size: 0.625rem;
+    font-size: 0.625em;
+    cursor: none;
 }
 body{
-    background-color: $themaColor;
+    background-color: $themeColor;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: $fontColor;
+}
+p{
+    font-size: 1.6rem;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $fontColor;
+}
+img{
+    height: auto;
+    vertical-align: bottom;
+    width: 100%;
+}
+.cursor{
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    top: -6px;
+    left: -6px;
+    border-radius: 50%;
+    z-index: 3;
+    pointer-events: none;
+    background-color: #000;
+    opacity: 0;
+    display: none;
+}
+.stalker{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: -25px;
+    background-color: #1100FF;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+    transition: all .3s ease-out;
+    display: none;
+}
+.l_inner{
+    width: 88%;
+    max-width: 330px;
+    margin: 0 auto;
+}
+// iPad
+@media screen and(min-width:376px){
+    .l_inner{
+        width: 91.145%;
+        max-width: 700px;
+    }
+}
+// iPad Pro
+@media screen and(min-width:769px){
+    .l-inner{
+        width: 83.984%;
+        max-width: 860px;
+    }
+    
+}
+// PC
+@media screen and(min-width:1025px){
+    .l_inner{
+        width: 69.531%;
+        max-width: 890px;
+    }
+    .cursor{
+        display: block;
+    }
+    .stalker{
+        display: block;
+    }
 }
