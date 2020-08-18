@@ -279,6 +279,9 @@ img {
     font-weight: 400;
     text-align: center;
     margin-bottom: 30px; }
+  .work .work_overview .work_overview_main img {
+    box-shadow: 0px 0px 5px #161616;
+    -webkit-box-shadow: 0px 0px 5px #161616; }
   .work .work_overview .work_overview_main .work_overview_list {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -293,7 +296,7 @@ img {
         font-size: 1.6rem;
         font-weight: 200;
         font-family: futura-pt,"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif; }
-    .work .work_overview .work_overview_main .work_overview_list .work_overview_list_item:nth-of-type(3) dd {
+    .work .work_overview .work_overview_main .work_overview_list .work_overview_list_item_soft dd {
       margin-left: 44px; }
   .work .work_overview .work_overview_main button {
     font-size: 1.6rem;
@@ -309,11 +312,12 @@ img {
 .work .work_contents .work_contents_outline {
   margin-bottom: 40px; }
 
-.work .work_contents .work_contents_flow p {
-  margin-bottom: 20px; }
-
-.work .work_contents .work_contents_flow img {
-  margin-bottom: 60px; }
+.work .work_contents .work_contents_flow {
+  margin-bottom: 40px; }
+  .work .work_contents .work_contents_flow p {
+    margin-bottom: 20px; }
+  .work .work_contents .work_contents_flow img {
+    margin-bottom: 60px; }
 
 @media screen and (min-width: 376px) {
   .work .work_overview h2 {

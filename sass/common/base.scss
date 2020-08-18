@@ -1,6 +1,8 @@
 // 変数
 $themeColor: #202428;
 $fontColor:#fcfcfc;
+$fontFamily_jp: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+$fontFamily_en: futura-pt, sans-serif;
 // css
 html{
     font-size: 0.625em;
@@ -8,14 +10,14 @@ html{
 }
 body{
     background-color: $themeColor;
-    font-family: futura-pt, sans-serif;
+    font-family: $fontFamily_en;
     font-weight: 500;
     font-style: normal;
     color: $fontColor;
 }
 p{
     font-size: 1.6rem;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: $fontFamily_jp;
 }
 li{
     list-style: none;

@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+<%- include('common/_head') %>
+<body>
+    <div class="cursor" id="js_cursor"></div>
+    <div class="stalker" id="js_stalker"></div>
+    <head>
+        <div class="work_head l_inner">
+            <h1>koke&nbsp;portfolio</h1>
+            <button><a href="index.html">back&nbsp;to&nbsp;top</a></button>
+        </div>
+    </head>
+    <main>
+        <div class="work">
+            <section>
+                <div class="work_overview l_inner">
+                    <h2>kokeWebClip</h2>
+                    <div class="work_overview_main">
+                        <picture>
+                            <source media="(min-width:376px)" srcset="image/kokeportfolio_work_thumbnail_tb.png">
+                            <source media="(min-width:769px)" srcset="image/kokeportfolio_work_thumbnail_tbpro.png">
+                            <source media="(min-width:1025px)" srcset="image/kokeportfolio_work_thumbnail_pc.png">
+                            <img src="image/kokeportfolio_work_thumbnail_sp.png" loading="lazy" width:330px; height:230px; alt="kokeblogの画像です。">
+                        </picture>
+                        <div class="work_overview_text">
+                            <dl class="work_overview_list">
+                                <div class="work_overview_list_item">
+                                    <dt>制作期間</dt>
+                                    <dd>2週間</dd>
+                                </div>
+                                <div class="work_overview_list_item">
+                                    <dt>使用技術</dt>
+                                    <dd>HTML&nbsp;Sass&nbsp;EJS&nbsp;gulp&nbsp;jQuery</dd>
+                                </div>
+                                <div class="work_overview_list_item work_overview_list_item_soft">
+                                    <dt>使用ソフト</dt>
+                                    <dd>XD</dd>
+                                </div>
+                            </dl>
+                            <!-- <a href="https://koke05.com/webgallery/"><button class="link_Bt">実際のサイトを見る</button></a> -->
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="work_contents l_inner">
+                    <h3>flow</h3>
+                    <div class="work_contents_outline">
+                        <h4 class="work_contents_head_title">作品概要</h4>
+                        <p>就活のためにも自分の作品をまとめて紹介するポートフォリオが必要になるのでこのkokeportfolioを制作しました。gulpとEJSを使ってコーディングしました。</p>
+                    </div>
+                    <div class="work_contents_flow">
+                        <h4 class="work_contents_head_title">制作の過程・思考</h4>
+                        <div class="work_contents_flow_text">
+                            <p>ポートフォリオは実際に話す代わりに自分について伝えるのが重要な役目だと考えています。なのでまず私自身がどんな人間なんだろうと振り返ってみるところから始めました。振り返ってみて、私は派手で明るい人間ではなく、どちらかというと静かに地味にコツコツやる人間だと考えたので、ポートフォリオも派手に明るくというよりは余分な装飾や情報を絞って、色も少なく背景の黒と文字色の白で統一しました。</p>
+                            <p>今まで通りHTML、CSSを使ってWordPressを導入してというだけではあまり勉強にはならないのかなと考えたので何かした他の技術を使って制作していこうと考えました。そこでちょうどSassのコンパイルのためにgulpの環境を整えていたので、そのままgulpで扱えるEJSを使って制作しました。他の静的サイトジェネレターを使ってということも考えましたが、まだそこを扱えるところまでJavaScriptをマスター仕切れてないなと感じていたので、環境を整えれば今までのHTMLと同じように書いていけるEJSを利用しました。Sassと一緒に使っているので、今後ポートフォリオの改善の時のメンテナンス性も上がると考えています。</p>
+                            <p>デザイン面では全体的にシンプルな分、細かいところを拘りました。トップのナビゲーションは大体のWebサイトでヘッダーに横並びになっているばかりで、同じようにしてしまっては面白味もないですし、たくさんの学生のポートフォリオをみている制作会社さんの印象も薄くなってしまうと考えたのでトップに大きく縦に並べてみました。作品制作へのリンクも他のポートフォリオサイトを見ているとブログの記事みたいなcardで見せていることが多いので、トップのナビゲーションの部分と同じような理由で見せ方を工夫しました。制作作品のリンクボタンなどを最近のUIののトレンドでもあるニューモフィズムを使っています。アクセシビリティの面では、よくないところが多いというのは理解していますが、見てもらえる対象が一般の人たちではなくデザイナーであったり、クリエイティブな職業の人たちなのでその辺りは気にする必要性がないと考えました。それになかなかニューモフィズムは使う機会も少ないので、ある程度自分で好きなようにできるポートフォリオで使ってみたいという思いもありました。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<footer>
+    <small>&copy;&nbsp;2020&nbsp;kokeportfolio</small>
+</footer>
+<%- include('common/_footer') %>
+</html>

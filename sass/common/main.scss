@@ -7,7 +7,7 @@
     margin-bottom: 70px;
 }
 .work_contents_head_title{
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: $fontFamily_jp;
     font-size: 2.2rem;
     font-weight: normal;
     margin-bottom: 20px;
@@ -152,6 +152,10 @@
             margin-bottom: 30px;
         }
         .work_overview_main{
+            img{
+                box-shadow: 0px 0px 5px #161616;
+            -webkit-box-shadow: 0px 0px 5px #161616;
+            }
             .work_overview_list{
                 margin-top: 40px;
                 margin-bottom: 40px;
@@ -160,7 +164,7 @@
                     margin-bottom: 15px;
                     dt{
                         font-size: 1.6rem;
-                        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+                        font-family: $fontFamily_jp;
                     }
                     dd{
                         margin-left: 60px;
@@ -169,7 +173,7 @@
                         font-family: futura-pt,"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
                     }
                 }
-                .work_overview_list_item:nth-of-type(3){
+                .work_overview_list_item_soft{
                     dd{
                         margin-left: 44px;
                     }
@@ -177,7 +181,7 @@
             }
             button{
                 font-size: 1.6rem;
-                font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+                font-family: $fontFamily_jp;
             }
         }
     }
@@ -193,6 +197,7 @@
             margin-bottom: 40px;
         }
         .work_contents_flow{
+            margin-bottom: 40px;
             p{
                 margin-bottom: 20px;
             }
