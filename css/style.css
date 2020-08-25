@@ -336,7 +336,7 @@ img {
 
 @media screen and (min-width: 769px) {
   .work .work_overview_main picture {
-    width: 57%; } }
+    width: 50%; } }
 
 @media screen and (min-width: 1025px) {
   .work .work_overview .work_overview_main picture {
