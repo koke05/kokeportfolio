@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+<%- include('common/_head') %>
+<body>
+    <div class="cursor" id="js_cursor"></div>
+    <div class="stalker" id="js_stalker"></div>
+    <head>
+        <div class="work_head l_inner">
+            <h1>koke&nbsp;portfolio</h1>
+            <button><a href="index.html">back&nbsp;to&nbsp;top</a></button>
+        </div>
+    </head>
+    <main>
+        <div class="work">
+            <section>
+                <div class="work_overview l_inner">
+                    <h2>Key&nbsp;Animation</h2>
+                    <div class="work_overview_main">
+                        <picture>
+                            <source media="(min-width:376px)" srcset="image/animation_work_thumbnail_tb.png">
+                            <source media="(min-width:769px)" srcset="image/animation_work_thumbnail_tbpro.png">
+                            <source media="(min-width:1025px)" srcset="image/animation_work_thumbnail_pc.png">
+                            <img src="image/animation_work_thumbnail_sp.png" loading="lazy" width:330px; height:230px; alt="keyanimationの画像です。">
+                        </picture>
+                        <div class="work_overview_text">
+                            <dl class="work_overview_list">
+                                <div class="work_overview_list_item">
+                                    <dt>制作期間</dt>
+                                    <dd>3日間</dd>
+                                </div>
+                                <div class="work_overview_list_item">
+                                    <dt>使用技術</dt>
+                                    <dd>HTML&nbsp;CSS&nbsp;JavaScript</dd>
+                                </div>
+                            </dl>
+                            <a href="https://koke05.com/animation/"><button class="link_Bt">実際のサイトを見る</button></a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="work_contents l_inner">
+                    <h3>flow</h3>
+                    <div class="work_contents_outline">
+                        <h4 class="work_contents_head_title">作品概要</h4>
+                        <p>JavaScripのライブラリであるAnime.jsを使った、アニメーション作品になります。キーボードの数字を押すとそれぞれに設定したアニメーションが再生されます。</p>
+                    </div>
+                    <div class="work_contents_flow">
+                        <h4 class="work_contents_head_title">制作の過程・思考</h4>
+                        <div class="work_contents_flow_text">
+                            <p>Anime.jsを使っているのと自分自身の技術的にも複雑なアニメーションは作れないこともあったので簡単な動きで、いかに気持ちの良いアニメーションにするかを考えながら制作していきました。ただ回転させるだけじゃなくて回転のスピードに緩急をつけたり、ただ落ちていくだけでなくバウンドして落ちていったり、物凄いアニメーションじゃなくてもちょっとした工夫で、楽しいアニメーションになるようにしました。細かいアニメーションにせず、画面いっぱいに大きく動くアニメーションを多くし、パッと見た時にしっかりわかるようにもしました。また同時にキーボードを押すことが結構あると思ったので、アニメーションが同時に再生された時にどう見えるのかも考えながら制作していきました。同時に再生された時に、同じような動きだったり、色合いが似ていると見ていて面白くないと思いました。なので、カラーは統一せずにカラフルにし、動きも同じにならないよう意識しました。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<footer>
+    <small>&copy;&nbsp;2020&nbsp;kokeportfolio</small>
+</footer>
+<%- include('common/_footer') %>
+</html>
