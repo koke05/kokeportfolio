@@ -212,7 +212,7 @@ img {
 
 @media screen and (min-width: 376px) {
   .top_heading_title {
-    font-size: 8rem;
+    font-size: 6.8rem;
     margin-bottom: 90px; }
   .main_work_contents {
     display: flex;
